@@ -38,14 +38,14 @@ header{
     color: #5DADE2;
 
  }
-  .navbar{
+.navbar{
     display: flex;
     position: relative;
-  }
-  .navbar li{
+}
+.navbar li{
    list-style: none;
 
-  }
+}
   .navbar a{
     color:#fff;
     text-decoration: none;
@@ -99,8 +99,23 @@ header{
   .contenu p:nth-child(2){
     color: #fff;
     font-size: 1.2em;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  .contenu p:nth-child(3){
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing: 10.3px;
 
   }
+  .contenu p:nth-child(3) span{
+    color: #fff;
+    font-size: 1;
+    font-family: "Press Start 2P", system-ui;
+    color: #1E90FF;
+    margin: 0px;
+    }
+  
   .btn1{
     font-size: 1em;
     color: #fff;
@@ -112,9 +127,7 @@ header{
     text-decoration: none;
     letter-spacing: 2px;
     transition: 0.5s;
-    margin-left: 10px;
-
-    
+    margin-left: 10px;   
   }
   .btn2{
     font-size: 1em;
@@ -322,11 +335,9 @@ header{
 }
 .contact{
   background-image: url(./images/9212262.jpg);
-  background-size: cover;
   box-shadow: 2px 2px 12px rgba(0,0,0, 0.8);
   width: 100%;
-  background-position: unset;
-
+  background-size: cover;
 }
 .contactform{
   padding: 75px 50px;
@@ -336,7 +347,7 @@ header{
   margin-top: 50px;
   justify-content: center;
   align-items: center;
-  margin-left: 32%;
+  margin-left: 28%;
 }
 .contactform .inputboite{
   position: relative;
@@ -411,76 +422,18 @@ header.sticky li a:hover{
   color: #5DADE2;
   border-bottom: 2px solid #5DADE2;
 }
-@media (max-width: 991px) {
-  header, header.sticky{
-    padding: 10px 20px;
-  }
-  header .navbar li{
-    margin-left: 0px;
-  }
-  header .navbar li a {
-    text-decoration: none;
-    color: #111;
-    font-size: 1.6em;
-    font-weight: 300;
-  }
-  .navbarg{
-   display: none;
 
-  }
-  section{
-    padding: 20px;
-  }
-
-  .banniere .contenu h2 {
-    font-size: 2em;
-  }
-  .row .col50 img{
-    margin-top: 18px;
-  }
-  .contenu p:nth-child(2){
-    font-size: 1.2em;
-
-  }
-  .contactform{
-    margin-left: 25px;
-  }
-  .menu{
-    margin-top: 0px;
-
-  }
-  .temoignage h2{
-    font-size: 1.2em;
-    text-align: center;
-
-  }
-  .temoignage{
-    text-align: center;
-
-  }
-
-  .row{
-    display: flex;
-    flex-direction: column;
-  }
-  .row.col50{
-    position: relative;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .row{
-    flex-direction: column;
-  }
-
-}
-@media (max-width: 480px)
-{
+@media (max-width: 820px){
    .banniere .contenu h2{
     font-size: 2.2em;
     color: #fff;
 
+   }
+   header.sticky{
+    display: none;
+   }
+   .navbar{
+    display: none;
    }
    .titre-texte{
     color: #000;
@@ -494,7 +447,71 @@ header.sticky li a:hover{
   .temoignage p{
     text-align: center;
   }
-  
+  .banniere{
+    padding: 0px;
+  }
+  .contenu{
+    font-size: small;
+  }
+  #apropos.apropos{
+    margin-top: 15px;
+    height: 270px;
+    padding: 0 15px;
+  }
+  .apropos .row{
+    display: block;
+    position: static;
+  }
+  .apropos .row .p3{
+    overflow-wrap: break-word;
+    height: auto;
+    width: auto;
+  }
+  .apropos{
+    padding: 0px;
+    text-align: center;
+    height: 400px;
+  }
+  .apropos img{
+    display: none;
+  }
+  .menu{
+    padding: 0px;
+    margin-top: 30px;
+  }*
+  .menu .titre:first-child{
+    padding: 0 35px;
+    text-align: center;
+  }
+  .menu .titre:last-child{
+    margin-bottom: 35px;
+  }
+  .temoignage{
+    padding: 0px;
+    height: 1280px;
+  }
+  .temoignage .titre{
+    padding: 20px;
+    padding-bottom: 0px;
+  }
+  .temoignage .titre h2{
+    font-size: 22px;
+  }
+  .temoignage .contenu{
+    margin: 20px 0;
+  }
+  .contact{
+    padding: 0px;
+        background-size: cover;
+  }
+  .contact .contactform{
+    margin: 0px;
+    height: 350px;
+    padding: 0px;
+    width: 250px;
+    padding: 20px 20px;
+    margin: 10px auto;
+  }
 }
 .contact .p2{
  margin: -20px;
